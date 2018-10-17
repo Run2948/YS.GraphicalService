@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "windowServer", "windowServe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_docs", "_docs", "{8FA1ECCB-DE67-4223-B1ED-DD705C386BF3}"
 	ProjectSection(SolutionItems) = preProject
+		1.png = 1.png
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
