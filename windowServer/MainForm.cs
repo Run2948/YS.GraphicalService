@@ -18,7 +18,7 @@ namespace windowServer
         public MainForm()
         {
             InitializeComponent();
-            strServiceName = string.IsNullOrEmpty(lblServiceName.Text) ? "BusinessMonitorServer" : lblServiceName.Text;//BusinessMonitorServer是windows服务的名称
+            strServiceName = string.IsNullOrEmpty(lblServiceName.Text) ? "MSMQChatService" : lblServiceName.Text;//MSMQChatService是windows服务的名称
             InitControlStatus(strServiceName, btnInstallOrUninstall, btnStartOrEnd, btnGetStatus, lblMsg, gbMain);
         }
 
@@ -272,7 +272,7 @@ namespace windowServer
         #region -FormCloseing-
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult result = MessageBox.Show("是缩小到托盘?", "确认", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+            DialogResult result = MessageBox.Show("是否最小化到系统托盘?", "确认", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
             if (result == DialogResult.Yes)
             {
                 // 取消关闭窗体  
@@ -333,7 +333,7 @@ namespace windowServer
             Process[] ps = Process.GetProcesses();
             foreach (Process item in ps)
             {
-                if (item.ProcessName == "营业监控后台服务")
+                if (item.ProcessName == "windowServer")
                 {
                     item.Kill();
                 }

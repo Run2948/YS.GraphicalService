@@ -82,9 +82,9 @@
             this.lblServiceName.ForeColor = System.Drawing.Color.Blue;
             this.lblServiceName.Location = new System.Drawing.Point(192, 36);
             this.lblServiceName.Name = "lblServiceName";
-            this.lblServiceName.Size = new System.Drawing.Size(149, 19);
+            this.lblServiceName.Size = new System.Drawing.Size(159, 19);
             this.lblServiceName.TabIndex = 4;
-            this.lblServiceName.Text = "lblServiceName";
+            this.lblServiceName.Text = "MSMQChatService";
             // 
             // btnGetStatus
             // 
@@ -163,8 +163,9 @@
             // 
             // notifyIcon1
             // 
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Text = "服务管理平台";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
@@ -174,19 +175,19 @@
             this.主界面ToolStripMenuItem,
             this.退出ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(113, 48);
             // 
             // 主界面ToolStripMenuItem
             // 
             this.主界面ToolStripMenuItem.Name = "主界面ToolStripMenuItem";
-            this.主界面ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.主界面ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.主界面ToolStripMenuItem.Text = "主界面";
             this.主界面ToolStripMenuItem.Click += new System.EventHandler(this.主界面ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -202,7 +203,7 @@
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "服务管理";
+            this.Text = "服务管理平台";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.gbMain.ResumeLayout(false);
